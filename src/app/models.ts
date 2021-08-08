@@ -1,4 +1,5 @@
 export interface Game {
+
     background_image : string;
     name: string;
     released:string;
@@ -7,6 +8,7 @@ export interface Game {
     description: string;
     metacritic: number;
     genres: Array<Genre>;
+    id:string;
     parent_platforms: Array<ParentPlatform>;
     publishers: Array<Publishers>;
     ratings: Array<Rating>;
