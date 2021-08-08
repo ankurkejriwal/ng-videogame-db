@@ -40,7 +40,7 @@ yarn-error.log
 testem.log
 /typings
 
-/http-header.interceptor.ts
+/src/app/interceptors/http-header.interceptor.ts
 
 # System Files
 .DS_Store
