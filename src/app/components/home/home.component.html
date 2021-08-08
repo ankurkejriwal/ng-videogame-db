@@ -1,20 +1,22 @@
 <div class="filters">
     <mat-form-field>
-        <mat-label>Sort</mat-label>
-        <mat-select
-            panelClass = "sort-select"
-            [(ngModel)] = "sort"
-        >
-            <mat-option vale = "name">Name</mat-option>
-            <mat-option vale = "-released">Released</mat-option>
-            <mat-option vale = "-added">Added</mat-option>
-            <mat-option vale = "-created">Created</mat-option>
-            <mat-option vale = "-updated">Ureated</mat-option>
-            <mat-option vale = "-rating">Rating</mat-option>
-            <mat-option vale = "-metacritic">Metacritic</mat-option>
-        </mat-select>
+      <mat-label>Sort</mat-label>
+      <mat-select
+        panelClass="sort-select"
+        [(ngModel)]="sort"
+        (selectionChange)="searchGames(sort)"
+      >
+        <mat-option value="name">Name</mat-option>
+        <mat-option value="-released">Released</mat-option>
+        <mat-option value="-added">Added</mat-option>
+        <mat-option value="-created">Created</mat-option>
+        <mat-option value="-updated">Updated</mat-option>
+        <mat-option value="-rating">Rating</mat-option>
+        <mat-option value="metacritic">Metacritic</mat-option>
+      </mat-select>
     </mat-form-field>
-</div>
+  </div>
+
 
 <!-- <div class= "games">
     <div class = "game">

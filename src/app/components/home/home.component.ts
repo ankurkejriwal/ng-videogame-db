@@ -29,11 +29,13 @@ export class HomeComponent implements OnInit {
     
     );
   }
-  searchGames(sort: string, search?: string) {
-   this.httpService.getGameList(sort,search).subscribe((gameList: APIResponse<Game>)=>{
-     this.games = gameList.results;
-     console.log(gameList);
-   });
+  searchGames(sort: string, search?: string): void {
+    this.httpService
+      .getGameList(sort, search)
+      .subscribe((gameList: APIResponse<Game>) => {
+        this.games = gameList.results;
+        console.log(gameList);
+      });
   }
 
 }
