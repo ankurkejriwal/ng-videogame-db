@@ -18,6 +18,7 @@ import { HttpService } from './services/http/http.service';
 
 import {HttpHeaderInterceptor} from './interceptors/http-header.interceptor'
 import { HttpErrorsInterceptor } from './interceptors/http-errors.interceptor';
+import { DetailsComponent } from './components/details/details.component';
 
 
 
@@ -25,7 +26,8 @@ import { HttpErrorsInterceptor } from './interceptors/http-errors.interceptor';
   declarations: [
     AppComponent,
     SearchBarComponent,
-    HomeComponent
+    HomeComponent,
+    DetailsComponent
   ],
   imports: [
     BrowserModule,
