@@ -1,6 +1,6 @@
 # NgVideoGameDb
 
-##Demo
+## Demo
 
 ![](vgdbGIf.gif)
 ## Development server
